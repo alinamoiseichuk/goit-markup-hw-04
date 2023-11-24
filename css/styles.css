@@ -64,6 +64,7 @@ list-style-type: none;
 .header {
 border-bottom: 1px solid #E7E9FC;
 background: #FFF;
+box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -79,7 +80,7 @@ background: #FFF;
 }
 
 .logo {
-    color:#4D5AE5;
+    color: #4D5AE5;
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 700;
@@ -87,6 +88,7 @@ background: #FFF;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-right: 76px;
+    position: relative;
 }
 
 .logo-text {
@@ -123,6 +125,10 @@ font-size: 16px;
 font-weight: 500;
 line-height: 0.66; 
 letter-spacing: 0.02em;
+}
+
+.menu-studio {
+color: #404BBF;
 }
 
 .studio-item {
@@ -178,8 +184,7 @@ rgba(46, 47, 66, 0.70),
 background-repeat: no-repeat;
 background-position: center center;
 background-size: cover;
-max-width: 1440рх;
-
+max-width: 1440px;
 }
 
 .section-main-page {
@@ -237,7 +242,7 @@ justify-content: center;
 }
 
 .benefits-item-container{
- width: calc((100% - 72px) / 4);
+width: calc((100% - 72px) / 4);
 }
 
 .container-icon {
@@ -316,23 +321,33 @@ text-align: center;
 }
 
 .container-icon-social {
-    display: flex;
-    column-gap: 24px;
-    justify-content: center;
+display: flex;
+gap: 24px;
+justify-content: center;
+align-items: center;
 }
 
 .icon-social {
-width: 40px;
-height: 40px;
+width: 100%;
+height: 100%;
 flex-shrink: 0;
 border-radius: 50%;
 background-color: #4D5AE5;
 padding: 12px;
 
+display: flex;
+align-items: center;
+justify-content: center;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-social-item {
     fill: #F4F4FD;
+}
+
+.icon-social:hover,
+.icon-social:focus {
+background-color: #404BBF;
 }
 
 /* PORTFOLIO */
@@ -349,17 +364,24 @@ margin-bottom: 72px;
 }
 
 .portfolio-container {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 24px;
-    row-gap: 48px; 
+display: flex;
+flex-wrap: wrap;
+column-gap: 24px;
+row-gap: 48px; 
 }
 
 
 .images-portfolio {
 background:#FFF;
 width: calc((100% - 48px) / 3);
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+border-radius: 0px 0px 4px 4px; 
+transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+.images-portfolio:hover,
+.images-portfolio:focus {
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .box {
