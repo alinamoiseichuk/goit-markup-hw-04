@@ -173,7 +173,7 @@ background-image: linear-gradient(
 rgba(46, 47, 66, 0.70),
  rgba(46, 47, 66, 0.70)
  ),
- url(./images/people-office.jpg);
+ url(/images/people_office.jpg);
 background-repeat: no-repeat;
 background-position: center center;
 background-size: cover;
