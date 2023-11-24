@@ -129,13 +129,10 @@ letter-spacing: 0.02em;
 
 .menu-studio {
 color: #404BBF;
-}
-
-.studio-item {
 position: relative;
 }
 
-.studio::after {
+.menu-studio::after {
 content: '';
 display: block;
 width: 48px;
@@ -252,6 +249,10 @@ border-radius: 4px;
 border: 1px solid #8E8F99;
 background: #F4F4FD;
 padding: 24px 100px;
+margin-bottom: 8px;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .benefits-list-title {
