@@ -179,9 +179,10 @@ rgba(46, 47, 66, 0.70),
  ),
  url(../images/people_office.jpg);
 background-repeat: no-repeat;
-background-position: center center;
+background-position: center;
 background-size: cover;
 max-width: 1440px;
+margin: 0 auto;
 }
 
 .section-main-page {
